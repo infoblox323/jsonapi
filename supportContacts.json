@@ -1,5 +1,4 @@
-{
-  "supportContacts": [
+ [
     {
       "Title": "Facilities",
       "Desc": "dlFacilities@infoblox.com",
@@ -36,4 +35,3 @@
       "Icon": "https://infoblox323.github.io/jsonapi/supportContacts/Expense Reimbursement Icon.jpeg"
     }
   ]
-}
