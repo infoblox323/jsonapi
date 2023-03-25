@@ -1,0 +1,39 @@
+{
+  "supportContacts": [
+    {
+      "Title": "Facilities",
+      "Desc": "dlFacilities@infoblox.com",
+      "Icon": "https://drive.google.com/file/d/1Mp0KD274e3RyQUSym-hoiz9lUypwF7T9/view?usp=share_link"
+    },
+    {
+      "Title": "Travel",
+      "Desc": "travel@Infoblox.com",
+      "Icon": "https://drive.google.com/file/d/1izSDl8IwDjVZDtwKeZhSoHfv9g-8nbUk/view?usp=share_link"
+    },
+    {
+      "Title": "Sales Commissions Questions",
+      "Desc": "sales-commission@infoblox.com",
+      "Icon": "https://drive.google.com/file/d/128zD2wQLvu1goIITT3LmsrueTSI8HVgo/view?usp=share_link"
+    },
+    {
+      "Title": "AMEX Corporate Credit Card (business travel only)",
+      "Desc": "Card-Admin@infoblox.com ",
+      "Icon": "https://drive.google.com/file/d/1LfTcfaQfmcwm49u-7h22lW0ejyPqYmz4/view?usp=share_link"
+    },
+    {
+      "Title": "Workday / Jobvite Questions",
+      "Desc": "hris@infoblox.com",
+      "Icon": "https://drive.google.com/file/d/1d5SYXXQG0EnWG02cKTeRJKY3oDvbIv9l/view?usp=share_link"
+    },
+    {
+      "Title": "Litmos",
+      "Desc": "Litmos app on OKTA. For Litmos questions contact learning@infoblox.com",
+      "Icon": "https://drive.google.com/file/d/1kGbdA3KZ_V8SA_GnDB9dm6fiJ7rRRGnv/view?usp=share_link"
+    },
+    {
+      "Title": "Expense Reimbursement",
+      "Desc": "Concur App on OKTA or expensereports@infoblox.com",
+      "Icon": "https://drive.google.com/file/d/1UILBFDIurcCXd_K0wMHuzKRH2weGyibq/view?usp=share_link"
+    }
+  ]
+}
