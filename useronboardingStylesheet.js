@@ -1,4 +1,5 @@
 function loadSupportContacts(){
+	alert('inside loadSupportContacts');
 	var url = "https://infoblox323.github.io/jsonapi/supportContacts.json";
 	$.ajax({
 	url: url,
@@ -29,6 +30,7 @@ function loadSupportContacts(){
 }
 
 function loadResource(){
+	alert('inside loadSupportContacts');
 	var url = "https://infoblox323.github.io/jsonapi/Resources.json";
 	$.ajax({
 	url: url,
