@@ -1,4 +1,4 @@
-var $j_object = $(".testClass");
+var $j_object = $(".x1gb");
 $j_object.each( function(i) { 
 	loadSupportContacts(); 
 	loadResource();
