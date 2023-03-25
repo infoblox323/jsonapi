@@ -4,7 +4,11 @@ $(document).ready(function() {
 	loadConnectDetails();
 	loadERGDetails();
 	
-	$("a").on("click", function() {
+	
+});
+
+
+$("a").on("click", function() {
 		
 		if ($(this).text() === 'Helpful Resources & Links') {
 			loadSupportContacts();
@@ -21,10 +25,6 @@ $(document).ready(function() {
 		}
 
 	});
-});
-
-
-
 
 function loadSupportContacts() {
 	var url = "https://infoblox323.github.io/jsonapi/supportContacts.json";
