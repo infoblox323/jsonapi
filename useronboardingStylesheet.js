@@ -3,19 +3,21 @@ $(document).ready(function() {
 	loadResource();
 	loadConnectDetails();
 	loadERGDetails();
+	
 	$("a").on("click", function() {
+		
 		if ($(this).text() === 'Helpful Resources & Links') {
 			loadSupportContacts();
 			loadResource();
 			loadConnectDetails();
 			loadERGDetails();
-			alert('Helpful Resources & Links');
+			console.log('Helpful Resources & Links');
 		}
 		else if ($(this).text() === 'Welcome to Infoblox') {
-			alert('Welcome to Infoblox');
+			console.log('Welcome to Infoblox');
 		}
 		else if ($(this).text() === 'About Infoblox') {
-			alert('About Infoblox');
+			console.log('About Infoblox');
 		}
 
 	});
@@ -100,6 +102,7 @@ function loadConnectDetails() {
 				var txt = "";
 				if (len > 0) {
 					for (var i = 0; i < len; i++) {
+						console.log('DATA' + obj[i].Name);
 						var liAdd = "<li class='list-group-item'><div class='d-flex align-items-center'><div class='flex-shrink-0 me-3'><img src='" + obj[i].Icon + "' class='avatar rounded-circle' /></div><div class='flex-grow-1'><h6 class='mb-0'> " + obj[i].Title + " </h6> <p class='mb-0 text-muted'>" + obj[i].Desc + " </p><a href='" + obj[i].URL + "' target='_blank' >" + obj[i].Title + "</a></div></div></li>"
 						if (liAdd != "") {
 							$("#connectList").append(liAdd);
@@ -129,6 +132,7 @@ function loadERGDetails() {
 				var txt = "";
 				if (len > 0) {
 					for (var i = 0; i < len; i++) {
+						console.log('DATA' + obj[i].Name);
 						var liAdd = "<li class='list-group-item'><div class='d-flex align-items-center'><div class='flex-shrink-0 me-3'><img src='" + obj[i].Icon + "' class='avatar rounded-circle' /></div><div class='flex-grow-1'><h6 class='mb-0'> " + obj[i].Title + " </h6> <p class='mb-0 text-muted'>" + obj[i].Desc + " </p></a></div></div></li>"
 						if (liAdd != "") {
 							$("#ERGList").append(liAdd);
