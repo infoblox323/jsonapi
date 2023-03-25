@@ -1,0 +1,51 @@
+[
+    {
+      "Title": "Benefits Questions",
+      "Name":"Global Benefits Portal",
+      "Desc": "Click below to view our Global Benefits Portal",
+      "Icon": "https://infoblox323.github.io/jsonapi/Resources/Benefits%20Icon.png",
+      "URL": "https%3A%2F%2Fhrportal.ehr.com%2Finfoblox"
+    },   
+    {
+      "Title": "Payroll",
+      "Name":"Global Payroll Portal",
+      "Desc": "Global Payroll App on OKTA. Click below for a link to the Global Payroll App",
+      "Icon": "https://infoblox323.github.io/jsonapi/Resources/Payroll Icon (Use for both US and International).png",
+      "URL": "https%3A%2F%2Fjadeglobalinfoblox.service-now.com%2Fpayroll"
+    },   
+    {
+      "Title": "Slack Channel Directory",
+      "Name":"Slack Channel Directory",
+      "Desc": "Click below to view our Slack channel directory",
+      "Icon": "https://infoblox323.github.io/jsonapi/Resources/Slack Icon.jpeg",
+      "URL": "https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1soGwvos9FaVDNK7bZpdSOjHiTvAeJUpu%2Fedit%3Fusp%3Dsharing%26ouid%3D112638807906869565745%26rtpof%3Dtrue%26sd%3Dtrue"
+    },   
+    {
+      "Title": "Blox360",
+      "Name":"Blox360",
+      "Desc": "Click below to navigate to our New Bloxers Hub",
+      "Icon": "https://infoblox323.github.io/jsonapi/Resources/Blox360 Logo Icon.png",
+      "URL": "https%3A%2F%2Fsites.google.com%2Finfoblox.com%2Fblox360%2Fhome"
+    },  
+    {
+      "Title":"Employee Referral Program",
+      "Name":"Blox 360 Employee Referral Guidelines",
+      "Desc": "Click below to view our Employee Referral Guidelines",
+      "Icon": "https://infoblox323.github.io/jsonapi/Resources/Wei Chen.JPG",
+      "URL": "https%3A%2F%2Fsites.google.com%2Finfoblox.com%2Fblox360%2Fdepartments%2Fpeople-places%2Femployee-referral-program%3Fauthuser%3D0"
+    },
+    {
+      "Title": "Travel and Visa Letters",
+      "Name":"Blox360 Form",
+      "Desc": "Click below to view our Blox360 Form",
+      "Icon": "https://infoblox323.github.io/jsonapi/Resources/Travel and Visa Icon.png",
+      "URL": "https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLScL1XE0HpbzwrpxMIvIlb4kmn3Jr-HyQaTPhHesWvdjBDrwTQ%2Fviewform"
+    },
+    {
+      "Title": "IT Service Portal",
+      "Name":"ServiceNow",
+      "Desc": "Click below to access our IT Service Portal (ServiceNow)",
+      "Icon": "https://infoblox323.github.io/jsonapi/Resources/ServiceNow-Logo.png",
+      "URL": "http%3A%2F%2Finfoblox.service-now.com%2F"
+    }
+  ]

@@ -1,0 +1,42 @@
+[
+    {
+      "Title": "Black Employee Resource Group (BERG)",
+      "Desc": "We advance the voices, experiences and contributions of our Black/African American talent. We celebrate Black culture, while increasing cultural awareness among Infoblox's global workforce. We outreach to underserved communities, helping those in need. And we instigate developmental opportunities that accelerate the professional success of our valued, diverse employees. Contact us at BERG@infoblox.com",
+      "Icon": "https://infoblox323.github.io/jsonapi/EmployeeResourceGroups/BERG%20Icon.png"
+    },
+    {
+      "Title": "BloxHearts",
+      "Desc": "Our mission is to provide a platform for Bloxers and their families with disabilities to share stories, resources, and ideas on how to promote inclusion of the disabled community. We will educate and inform the broader Infoblox community on promoting inclusion of disabled community and advocating for accessibility in everyday activities. Contact us at #erg-bloxhearts",
+      "Icon": "https://infoblox323.github.io/jsonapi/EmployeeResourceGroups/BloxHearts Icon.png"
+    },
+    {
+      "Title": "BloxVets",
+      "Desc": "Our mission is to recognize Bloxers who have served in the armed forces and celebrate the sacrifices veterans make to create a better place for all. This group will promote issues and causes that are important to veteran Bloxers and will help establish Infoblox as an employer of choice for veterans. Contact us at bloxvets-erg@infoblox.com",
+      "Icon": "https://infoblox323.github.io/jsonapi/EmployeeResourceGroups/BloxVets Icon.png"
+    },
+    {
+      "Title": "FaithBlox",
+      "Desc": "FaithBlox is focused on celebrating, supporting, and fostering the understanding of our global faith and spiritual diversity through inclusive and educational events and initiatives. Our goal is to cultivate a culture of empathy, respect, and belonging at Infoblox for people from all faiths, backgrounds, traditions, and worldview. Contact us at faithblox-erg@infoblox.com",
+      "Icon": "https://infoblox323.github.io/jsonapi/EmployeeResourceGroups/FaithBlox Icon.png"
+    },
+    {
+      "Title": "NextGen",
+      "Desc": "Our vision is to continue the professional and personal growth for young professionals within the company and to inspire a feeling of belonging in the workplace. We will create opportunities for young leaders to fulfill their highest potential, while advancing the company's core values of diversity, equity, and inclusion. Contact us at nextgen-erg@infoblox.com",
+      "Icon": "https://infoblox323.github.io/jsonapi/EmployeeResourceGroups/NextGen Icon.png"
+    },
+    {
+      "Title": "PRIDE + friends",
+      "Desc": "The Pride and Friend's ERG represents the voices of the LGBTQ+ employees and serves to create a culture of belonging and inclusion. Focusing on education, awareness, and gender expression, Pride and Friends aims to establish Infoblox as the employer choice and an ally to the LGBTQ+ community. Contact us at prideandfriends@infoblox.com",
+      "Icon": "https://infoblox323.github.io/jsonapi/EmployeeResourceGroups/Pride + Friends Icon.png"
+    },
+    {
+      "Title": "Unid@s Blox",
+      "Desc": "Unidos Blox is an inclusive global community connecting and supporting Bloxers who share an interest and passion for Hispanic and LatinX cultures throughout Infoblox. Contact us at unidos-blox-erg@infoblox.com",
+      "Icon": "https://infoblox323.github.io/jsonapi/EmployeeResourceGroups/Unid@s Blox Icon.png"
+    },
+    {
+      "Title": "Women at Infoblox Network (W@IN)",
+      "Desc": "Women at Infoblox Network's purpose is to further Infoblox's commitment to the retention and advancement of women and to provide a supportive forum where we share information, learn together, and empower each other to pursue our goals. Contact us at dlwincommittee@infoblox.com",
+      "Icon": "https://infoblox323.github.io/jsonapi/EmployeeResourceGroups/W@IN Icon.png"
+    }
+  ]
