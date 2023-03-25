@@ -1,3 +1,5 @@
+$('#Maincontainer').load('#Maincontainer > *')
+
 
 	loadSupportContacts(); 
 	loadResource();
