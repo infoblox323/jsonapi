@@ -1,11 +1,13 @@
     $(document).ready(function(){
+	    loadSupportContacts(); 
+	    loadResource();
         $("a").on("click", function(){
             alert('Link Clicked'+$(this).text());
             
             if($(this).text()==='Helpful Resources & Links'){
-		    	loadSupportContacts(); 
-			loadResource();
-             alert('Helpful Resources & Links');
+		loadSupportContacts(); 
+		loadResource();
+             	alert('Helpful Resources & Links');
             }
             else if($(this).text()==='Welcome to Infoblox'){
             	alert('Welcome to Infoblox');   
