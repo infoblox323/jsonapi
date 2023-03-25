@@ -1,3 +1,9 @@
+var $j_object = $(".testClass");
+$j_object.each( function(i) { 
+	loadSupportContacts(); 
+	loadResource();
+} );
+
 function loadSupportContacts(){
 	alert('inside loadSupportContacts');
 	var url = "https://infoblox323.github.io/jsonapi/supportContacts.json";
