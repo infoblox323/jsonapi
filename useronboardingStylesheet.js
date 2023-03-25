@@ -67,7 +67,6 @@ function loadResource() {
 		},
 		success: function(data) {
 			const obj = JSON.parse(data);
-			console.log('DATA' + obj);
 			var len = obj.length;
 			if (obj) {
 				var txt = "";
