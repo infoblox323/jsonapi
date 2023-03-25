@@ -85,10 +85,6 @@ function loadResource(){
 
 }
 
-function loadcolumn1(){
-	loadSupportContacts();
-	loadResource();
-}
 
 
 
