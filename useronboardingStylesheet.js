@@ -1,8 +1,6 @@
-var $j_object = $(".x1gb");
-$j_object.each( function(i) { 
+
 	loadSupportContacts(); 
 	loadResource();
-} );
 
 function loadSupportContacts(){
 	alert('inside loadSupportContacts');
