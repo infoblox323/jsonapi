@@ -1,0 +1,16 @@
+[
+    {
+      "Title": "Diversity, Equity, & Inclusion at Infoblox",
+      "Name":"Diversity, Equity, & Inclusion at Infoblox",
+      "Desc": "Click below to view information about our Environmental, Social, & Governance Policy.",
+      "Icon": "https://infoblox323.github.io/jsonapi/aboutInfoblox/DEI Link Icon.png",
+      "URL": "https%3A%2F%2Fdiversity.infoblox.com%2F"
+    },   
+    {
+      "Title": "6 Ways to Get Involved with DEI-ESG",
+      "Name":"6 Ways to Get Involved with DEI-ESG",
+      "Desc": "Click below to learn more about how to get involved with DEI-ESG at Infoblox.",
+      "Icon": "https://infoblox323.github.io/jsonapi/aboutInfoblox/DEI Custom Image.png",
+      "URL": "https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F18ogPB9B7MkbARMpR2oKmAeKR3RmFlKwk%2Fview%3Fusp%3Dsharing"
+    }
+]

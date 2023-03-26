@@ -1,0 +1,16 @@
+[
+    {
+      "Title": "Environmental, Social, & Governance Policy",
+      "Name":"ESG Policy",
+      "Desc": "Click below to view information about our Environmental, Social, & Governance Policy.",
+      "Icon": "https://infoblox323.github.io/jsonapi/aboutInfoblox/ESG Policy Link Icon.png",
+      "URL": "https%3A%2F%2Fsites.google.com%2Finfoblox.com%2Fblox360%2Fjedi-di%2Fesg%3Fauthuser%3D0"
+    },   
+    {
+      "Title": "Infoblox KIND",
+      "Name":"Infoblox KIND",
+      "Desc": "Click below to view Infoblox KIND information.",
+      "Icon": "https://infoblox323.github.io/jsonapi/aboutInfoblox/InfobloxKIND logo.jpeg",
+      "URL": "https%3A%2F%2Fsites.google.com%2Finfoblox.com%2Fblox360%2Fjedi-di%2Fesg%3Fauthuser%3D0"
+    }
+]
