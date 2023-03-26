@@ -155,15 +155,20 @@ function loadWelcomevideos() {
 					
 					jQuery('<div>', {
     							id: 'VideoList'
-							}).appendTo('#welcomevideos');
+							}).appendTo('#welcomevideosList');
 					
 					for (var i = 0; i < len; i++) {
 						
-							jQuery('<div>', {
-    								id: 'list-group-item'+i,
-								    class: 'd-flex align-items-center',
-								}).appendTo('#welcomevideosList');
-									
+						jQuery('<li>', {
+    								id: 'list'+i,
+								    class:'list-group-item',
+								}).appendTo('#VideoList');
+						
+								jQuery('<div>', {
+									id: 'list-group-item'+i,
+									    class: 'd-flex align-items-center',
+									}).appendTo('#list'+i);
+
 									jQuery('<div>', {
 	    								id: 'avatar'+i,
 									    class: 'flex-shrink-0 me-3',
@@ -175,7 +180,7 @@ function loadWelcomevideos() {
 												  alt: obj[i].Title
 												});
 												//img.appendTo($('#YourDiv'));
-										img.appendTo('#avatar'+i);
+												img.appendTo('#avatar'+i);
 						
 									jQuery('<div>', {
 	    								id: 'tileContent'+i,
