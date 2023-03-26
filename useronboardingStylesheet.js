@@ -15,7 +15,7 @@ $(document).ready(function() {
 			console.log('Helpful Resources & Links');
 		}
 		else if ($(this).text() === 'Welcome to Infoblox') {
-				loadWelcomevideos();
+			loadWelcomevideos();
 			console.log('Welcome to Infoblox');
 		}
 		else if ($(this).text() === 'About Infoblox') {
@@ -136,7 +136,6 @@ function loadConnectDetails() {
 
 
 function loadWelcomevideos() {
-	console.log('inside welcome vides');
 	var url = "https://infoblox323.github.io/jsonapi/WelcomeVideos.json";
 	$.ajax({
 		url: url,
@@ -152,6 +151,12 @@ function loadWelcomevideos() {
 			if (obj) {
 				var txt = "";
 				if (len > 0) {
+					$("#VideoList").remove();
+					
+					jQuery('<div>', {
+    							id: 'VideoList'
+							}).appendTo('#welcomevideos');
+					
 					for (var i = 0; i < len; i++) {
 						
 							jQuery('<div>', {
