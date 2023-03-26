@@ -5,6 +5,7 @@ $(document).ready(function() {
 	loadERGDetails();
 	
 	   $("a").click(function(){
+		   console.log('hyperlink clicked');
 		   if ($(this).text() === 'Helpful Resources & Links') {
 			loadSupportContacts();
 			loadResource();
@@ -24,8 +25,9 @@ $(document).ready(function() {
 });
 
 
-	$("a").on("click", function() {
-		
+	$('a').on("click", function() {
+				   console.log('hyperlink clicked');
+
 		if ($(this).text() === 'Helpful Resources & Links') {
 			loadSupportContacts();
 			loadResource();
