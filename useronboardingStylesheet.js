@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	
+	window.location.reload(true);
 	loadSupportContacts();
 	loadResource();
 	loadConnectDetails();
@@ -17,6 +19,8 @@ $(document).ready(function() {
     });
 	
 	   $('a').click(function(){
+		   
+		   window.location.reload(true);
 		   console.log('hyperlink clicked');
 		   if ($(this).text() === 'Helpful Resources & Links') {
 			loadSupportContacts();
