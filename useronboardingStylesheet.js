@@ -5,17 +5,10 @@ $(document).ready(function() {
 	loadConnectDetails();
 	loadERGDetails();
 	loadWelcomevideos();
-	$("#ContactsList").ready(
-		function(){
-			alert('ContactsList');
-     //do stuff
-    });
+	
 	
 	$("#containerVideosList").ready(
-		function(){
-			alert('containerVideosList');
-     //do stuff
-    });
+	
 	
 	   $('a').click(function(){
 		   
