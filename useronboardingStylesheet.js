@@ -4,6 +4,11 @@ $(document).ready(function() {
 	loadConnectDetails();
 	loadERGDetails();
 	loadWelcomevideos();
+	$("#ContactsList").ready(
+		function(){
+			alert('ContactsList');
+     //do stuff
+    });
 	
 	   $("a").click(function(){
 		   console.log('hyperlink clicked');
