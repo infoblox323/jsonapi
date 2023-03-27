@@ -10,6 +10,12 @@ $(document).ready(function() {
      //do stuff
     });
 	
+	$("#containerVideosList").ready(
+		function(){
+			alert('containerVideosList');
+     //do stuff
+    });
+	
 	   $('a').click(function(){
 		   console.log('hyperlink clicked');
 		   if ($(this).text() === 'Helpful Resources & Links') {
