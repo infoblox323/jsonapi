@@ -11,6 +11,7 @@ $(document).ready(function() {
 		   
 		   console.log('hyperlink clicked');
 		   if ($(this).text() === 'Helpful Resources & Links') {
+			   	window.location.reload(true);
 			loadSupportContacts();
 			loadResource();
 			loadConnectDetails();
@@ -18,6 +19,7 @@ $(document).ready(function() {
 			console.log('Helpful Resources & Links');
 		}
 		else if ($(this).text() === 'Welcome to Infoblox') {
+				window.location.reload(true);
 			loadWelcomevideos();
 			console.log('Welcome to Infoblox');
 		}
