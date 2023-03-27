@@ -1,6 +1,5 @@
 $(document).ready(function() {
 	
-	window.location.reload(true);
 	loadSupportContacts();
 	loadResource();
 	loadConnectDetails();
