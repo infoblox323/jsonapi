@@ -10,7 +10,7 @@ $(document).ready(function() {
      //do stuff
     });
 	
-	   $("a").click(function(){
+	   $('a').click(function(){
 		   console.log('hyperlink clicked');
 		   if ($(this).text() === 'Helpful Resources & Links') {
 			loadSupportContacts();
@@ -32,24 +32,7 @@ $(document).ready(function() {
 });
 
 
-	$('a').on("click", function() {
-				   console.log('hyperlink clicked');
-
-		if ($(this).text() === 'Helpful Resources & Links') {
-			loadSupportContacts();
-			loadResource();
-			loadConnectDetails();
-			loadERGDetails();
-			console.log('Helpful Resources & Links');
-		}
-		else if ($(this).text() === 'Welcome to Infoblox') {
-			console.log('Welcome to Infoblox');
-		}
-		else if ($(this).text() === 'About Infoblox') {
-			console.log('About Infoblox');
-		}
-
-	});
+	
 
 function loadSupportContacts() {
 	var url = "https://infoblox323.github.io/jsonapi/supportContacts.json";
