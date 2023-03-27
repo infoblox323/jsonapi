@@ -7,12 +7,8 @@ $(document).ready(function() {
 	loadWelcomevideos();
 	
 	
-	$("#containerVideosList").ready(
-	
-	
-	   $('a').click(function(){
+   $('a').click(function(){
 		   
-		   window.location.reload(true);
 		   console.log('hyperlink clicked');
 		   if ($(this).text() === 'Helpful Resources & Links') {
 			loadSupportContacts();
