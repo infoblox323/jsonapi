@@ -7,6 +7,7 @@ $(document).ready(function() {
 	loadWelcomevideos();
 	
 	
+	
    $('a').click(function(){
 		   
 		   console.log('hyperlink clicked');
