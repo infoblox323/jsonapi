@@ -1,0 +1,37 @@
+[
+    {
+      "Title": "Collaboration",
+      "Desc": "Collaborating well with others helps careers, projects, teams and customers. And we take it to the next level using surveys, best practices and the latest collaboration tools.",
+      "Icon": "https://infoblox323.github.io/jsonapi/aboutInfoblox/Collaboration.png"
+    },
+    {
+      "Title": "No Jerks",
+      "Desc": "We have zero tolerance for bullies. Effective teamwork is essential to everyone's success and we have sage feedback systems in place to ensure our culture remains truly supportive.",
+      "Icon": "https://infoblox323.github.io/jsonapi/aboutInfoblox/No%20Jerks.png"
+    },
+    {
+      "Title": "Delight Our Customers",
+      "Desc": "Our first priority as a company is to ensure customer success. We are passionate about creating an excellent product and service experience in all customer interactions.",
+      "Icon": "https://infoblox323.github.io/jsonapi/aboutInfoblox/Delight Our Customers.png"
+    },
+    {
+      "Title": "Fun",
+      "Desc": "Working hard doesn't mean not having fun! We all strive to cultivate a fun atmosphere which is essential to doing great work, feelin good and relieving stress.",
+      "Icon": "https://infoblox323.github.io/jsonapi/aboutInfoblox/Fun.png"
+    },
+    {
+      "Title": "Absolute Integrity",
+      "Desc": "We act with honesty and integrity without compromising the truth. We honor our commitments. And we hold ourselves accountable for our actions.",
+      "Icon": "https://infoblox323.github.io/jsonapi/aboutInfoblox/Absolute Integrity.png"
+    },
+    {
+      "Title": "Transparency",
+      "Desc": "Whether it's good news or bad news, we work hard to be authentic and share directions, challenges, opinions and decisions openly and honestly.",
+      "Icon": "https://infoblox323.github.io/jsonapi/aboutInfoblox/Transparency.png"
+    },
+    {
+      "Title": "Respect for Others",
+      "Desc": "Everyone at Infoblox is dedicated to treating one another fairly no matter who they are. And we believe that starts with listening attentively and being respectful of each individual.",
+      "Icon": "https://infoblox323.github.io/jsonapi/aboutInfoblox/Respect for Others.png"
+    }
+  ]
