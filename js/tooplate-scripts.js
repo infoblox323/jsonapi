@@ -8,6 +8,7 @@ $(document).ready(function() {
 	loadESGPolicy() ;
 	load_DEI();
 	load_HistoryINFBLOX();
+	loadCoreValues();
 // hide tabs
 	$("#_welcomevideos").hide();
 	$("#_infobloxhistory").hide();
@@ -316,6 +317,38 @@ function loadERGDetails() {
 
 }
 
+
+
+function loadCoreValues() {
+	var url = "https://infoblox323.github.io/jsonapi/coreValues.json";
+	$.ajax({
+		url: url,
+		type: "get",
+		dataType: 'text',
+		error: function(data) {
+			//debugger;
+			alert('err');
+		},
+		success: function(data) {
+			const obj = JSON.parse(data);
+			var len = obj.length;
+			if (obj) {
+				var txt = "";
+				if (len > 0) {
+					for (var i = 0; i < len; i++) {
+						var liAdd = "<li class='list-group-item'><div class='d-flex align-items-center'><div class='flex-shrink-0 me-3'><img src='" + obj[i].Icon + "' class='avatar rounded-circle' /></div><div class='flex-grow-1'><h6 class='mb-0'> " + obj[i].Title + " </h6> <p class='mb-0 text-muted'>" + obj[i].Desc + " </p></a></div></div></li>"
+						if (liAdd != "") {
+							$("#_coreValues").append(liAdd);
+						}
+					}
+				}
+			}
+		}
+	});
+
+}
+
+
 function loadESGPolicy() {
 	var url = "https://infoblox323.github.io/jsonapi/ESGPolicy.json";
 	$.ajax({
@@ -533,7 +566,7 @@ function load_HistoryINFBLOX() {
 									    class: 'mb-0',
 									    text: obj[i].Desc,
 									    target:'_blank',
-									    href:obj[i].URL
+									    href:obj[i].URL,
 									}).appendTo('#_HINFLXtileContent'+i);
 					
 					}
