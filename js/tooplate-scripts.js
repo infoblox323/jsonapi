@@ -13,13 +13,13 @@ $(document).ready(function() {
 	$("#_welcomevideos").hide();
 	$("#_infobloxhistory").hide();
 
-   
-
-});
-$("#home").ready(
+   $("#home").ready(
 function(){
     alert('Inside custom home page');
     });
+
+});
+
 
 //_welcomevideos
 $("#_tabresourcesLink").on("click", function(){
