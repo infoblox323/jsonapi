@@ -16,7 +16,10 @@ $(document).ready(function() {
    
 
 });
-
+$("#home").ready(
+function(){
+    alert('Inside custom home page');
+    });
 
 //_welcomevideos
 $("#_tabresourcesLink").on("click", function(){
