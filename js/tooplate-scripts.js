@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	window.location.reload(true);
+	alert('Inside custom page');
 	loadSupportContacts();
 	loadResource();
 	loadConnectDetails();
