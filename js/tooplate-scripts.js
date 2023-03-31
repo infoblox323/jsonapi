@@ -17,6 +17,17 @@ $(document).ready(function() {
 function(){
     alert('Inside custom home page');
     });
+	
+	
+	Query(document).ready(checkContainer);
+
+function checkContainer () {
+  if ($('#home').is(':visible')) { //if the container is visible on the page
+     alert('Inside custom home page');
+  } else {
+    setTimeout(checkContainer, 50); //wait 50 ms, then try again
+  }
+}
 
 });
 
