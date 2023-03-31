@@ -13,21 +13,21 @@ $(document).ready(function() {
 	$("#_welcomevideos").hide();
 	$("#_infobloxhistory").hide();
 
-   $("#home").ready(
-function(){
-    alert('Inside custom home page');
+   $('a').click(function(){
+		   
+		   console.log('hyperlink clicked');
+		   if ($(this).text() === 'Onboarding Resources') {
+			   	
+			console.log('Onboarding Resources');
+		}
+	
     });
 	
-	
-	Query(document).ready(checkContainer);
 
-function checkContainer () {
-  if ($('#home').is(':visible')) { //if the container is visible on the page
-     alert('Inside custom home page');
-  } else {
-    setTimeout(checkContainer, 50); //wait 50 ms, then try again
-  }
-}
+});
+
+	
+	
 
 });
 
