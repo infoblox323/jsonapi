@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	alert('Inside custom page');
 	loadSupportContacts();
 	loadResource();
 	loadConnectDetails();
@@ -12,22 +11,6 @@ $(document).ready(function() {
 // hide tabs
 	$("#_welcomevideos").hide();
 	$("#_infobloxhistory").hide();
-
-   $('a').click(function(){
-		   
-		   console.log('hyperlink clicked');
-		   if ($(this).text() === 'Onboarding Resources') {
-			   	
-			console.log('Onboarding Resources');
-		}
-	
-    });
-	
-
-});
-
-	
-	
 
 });
 
