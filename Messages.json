@@ -9,7 +9,7 @@
       "Icon": "https://infoblox323.github.io/jsonapi/images/Scott-Headshot.jpg"
     },
 	{
-      "Title": "A Message From Your Manager",
+      "Title": "Manager",
       "Name":"Manager ",
       "Desc": "A Message From Your Manager",
 	  "short_Desc" : "I’m here to support you along the way, starting with making your first weeks as a Bloxer as smooth as possible as you get up to speed.",
@@ -17,7 +17,7 @@
       "Icon": "https://infoblox323.github.io/jsonapi/images/Cgrace (1).jpg"
     },	
     {
-      "Title": "Chief Marketing Officer",
+      "Title": "HR_SVP",
       "Name": "Carolyn Gracey",
       "Desc": "A Message From People & Places",
 	  "short_Desc" : "Infoblox is a special place, so make the most of it, and continue to learn along the way.",
