@@ -3,24 +3,24 @@
       "Title": "Infoblox LinkedIn",
       "Desc": "Click below to navigate to the LinkedIn page.",
       "Icon": "https://infoblox323.github.io/jsonapi/ConnectwithUs/LinkedIn Icon.png",
-      "URL": "https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Finfoblox"
+      "URL": "https://www.linkedin.com/company/infoblox"
     },
     {
       "Title": "Infoblox Glassdoor",
       "Desc": "Click below to navigate to the Glassdoor page.",
       "Icon": "https://infoblox323.github.io/jsonapi/ConnectwithUs/Glassdoor%20Icon.png",
-      "URL": "https%3A%2F%2Fwww.glassdoor.com%2FReviews%2FInfoblox-Reviews-E35108.htm"
+      "URL": "https://www.glassdoor.com/Reviews/Infoblox-Reviews-E35108.htm"
     },
     {
       "Title": "Infoblox Twitter",
       "Desc": "Click below to navigate to the Twitter page.",
       "Icon": "https://infoblox323.github.io/jsonapi/ConnectwithUs/Twitter Icon.jpeg",
-      "URL":"https%3A%2F%2Ftwitter.com%2FInfoblox%3Fref_src%3Dtwsrc%255Egoogle%257Ctwcamp%255Eserp%257Ctwgr%255Eauthor"
+      "URL":"https://twitter.com/Infoblox"
     },
     {
       "Title": "Infoblox Instagram",
       "Desc": "Click below to navigate to the Instagram page.",
       "Icon": "https://infoblox323.github.io/jsonapi/ConnectwithUs/Instagram Icon.png",
-      "URL": "https%3A%2F%2Fwww.instagram.com%2Finfoblox%3Figshid%3DYmMyMTA2MY"
+      "URL": "https://www.instagram.com/infoblox/"
     }
   ]
