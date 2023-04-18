@@ -1,37 +1,37 @@
  [
     {
       "Title": "Facilities INDIA",
-      "Desc": "dlFacilities@infoblox.com",
+      "Desc": "<a href='mailto:dlFacilities@infoblox.com'>dlFacilities@infoblox.com</a>",
       "Icon": "https://infoblox323.github.io/jsonapi/supportContacts/Facilities Icon.png"
     },
     {
       "Title": "Travel",
-      "Desc": "travel@Infoblox.com",
+      "Desc": "<a href='mailto:travel@Infoblox.com'>travel@Infoblox.com</a>",
       "Icon": "https://infoblox323.github.io/jsonapi/supportContacts/Travel Icon.png"
     },
     {
       "Title": "Sales Commissions Questions",
-      "Desc": "sales-commission@infoblox.com",
+      "Desc": "<a href='mailto:sales-commission@infoblox.com'>sales-commission@infoblox.com</a>",
       "Icon": "https://infoblox323.github.io/jsonapi/supportContacts/Sales Comissions Icon.png"
     },
     {
       "Title": "AMEX Corporate Credit Card (business travel only)",
-      "Desc": "Card-Admin@infoblox.com ",
+      "Desc": "<a href='mailto:Card-Admin@infoblox.com'>Card-Admin@infoblox.com</a> ",
       "Icon": "https://infoblox323.github.io/jsonapi/supportContacts/AMEX Icon.png"
     },
     {
       "Title": "Workday / Jobvite Questions",
-      "Desc": "hris@infoblox.com",
+      "Desc": "<a href='mailto:hris@infoblox.com'>hris@infoblox.com</a>",
       "Icon": "https://infoblox323.github.io/jsonapi/supportContacts/Workday Icon.png"
     },
     {
       "Title": "Litmos",
-      "Desc": "Litmos app on OKTA. For Litmos questions contact learning@infoblox.com",
+      "Desc": "Litmos app on OKTA. For Litmos questions contact <a href='mailto:learning@infoblox.com'>learning@infoblox.com</a>",
       "Icon": "https://infoblox323.github.io/jsonapi/supportContacts/Litmos Icon.jpeg"
     },
     {
       "Title": "Expense Reimbursement",
-      "Desc": "Concur App on OKTA or expensereports@infoblox.com",
+      "Desc": "Concur App on OKTA or <a href='mailto:expensereports@infoblox.com'>expensereports@infoblox.com</a>",
       "Icon": "https://infoblox323.github.io/jsonapi/supportContacts/Expense Reimbursement Icon.jpeg"
     }
   ]
