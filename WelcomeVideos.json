@@ -4,21 +4,21 @@
       "Name":"Carolyn Gracey",
       "Desc": "Click here to watch a welcome video from Carolyn.",
       "Icon": "https://infoblox323.github.io/jsonapi/images/Cgrace (1).jpg",
-      "URL": "https://drive.google.com/file/d/1yZev_A1B2FslDYImo6VcWnsrhrYde90Z/preview?autoplay=1"
+      "URL": "https://drive.google.com/file/d/1yZev_A1B2FslDYImo6VcWnsrhrYde90Z/preview"
     },   
     {
       "Title": "Finance - EVP & CFO",
       "Name":"Hoke Horne",
       "Desc": "Click here to watch a welcome video from Hoke.",
       "Icon": "https://infoblox323.github.io/jsonapi/images/Hoke Horne.jpg",
-      "URL": "https://drive.google.com/file/d/1TELPfvrTeE5EKsPycXnYW8m5L9EkTqkx/preview?autoplay=1"
+      "URL": "https://drive.google.com/file/d/1TELPfvrTeE5EKsPycXnYW8m5L9EkTqkx/preview"
     },   
     {
       "Title": "Chief Marketing Officer",
       "Name":"Brad Rinklin",
       "Desc": "Click here to watch a welcome video from Brad.",
       "Icon": "https://infoblox323.github.io/jsonapi/images/BradRinklin.jpg",
-      "URL": "https://drive.google.com/file/d/1pkZAWu6Hno0kDw482JuuhGm3O6LzigKc/preview?autoplay=1"
+      "URL": "https://drive.google.com/file/d/1pkZAWu6Hno0kDw482JuuhGm3O6LzigKc/preview"
     },   
     {
       "Title": "Chief Revenue Officer",
@@ -39,20 +39,20 @@
       "Name":"Brad Bell",
       "Desc": "Click here to watch a welcome video from Brad.",
       "Icon": "https://infoblox323.github.io/jsonapi/images/bbellheadshot.png",
-      "URL": "https://drive.google.com/file/d/1qwvGl-8Yz5VHokB9z6EkBCoF1YbRraRh/view"
+      "URL": "https://drive.google.com/file/d/1qwvGl-8Yz5VHokB9z6EkBCoF1YbRraRh/preview"
     },
     {
       "Title": " EVP of Products & Corporate Dev",
       "Name":"Kanaiya Vasani",
       "Desc": "Click here to watch a welcome video from Kanaiya.",
       "Icon": "https://infoblox323.github.io/jsonapi/images/Kanaiya Vasani.png",
-      "URL": "https://drive.google.com/file/d/1IrsLypZg1jqh-Mi1EoLCAsF08tpfivo0/view"
+      "URL": "https://drive.google.com/file/d/1IrsLypZg1jqh-Mi1EoLCAsF08tpfivo0/preview"
     },
     {
       "Title": "VP of Business Operations",
       "Name":"Liza Burns",
       "Desc": "Click here to watch a welcome video from Liza.",
       "Icon": "https://infoblox323.github.io/jsonapi/images/Liza Burns - Picture.png",
-      "URL": "https://drive.google.com/file/d/1xVqQnzSbUgo-v_d090JDe50mob1d-sHq/view"
+      "URL": "https://drive.google.com/file/d/1xVqQnzSbUgo-v_d090JDe50mob1d-sHq/preview"
     }
   ]
