@@ -910,10 +910,9 @@ function loadContent(){
 	
 	$("#_contentHome").show();
 	$("#_msgSection").show();
-	$("#__onboardingInstructionsLink").show()
+	$("#__onboardingInstructionsLink").show();
+	$("#_navbarTop").show();
 
 
 	
 }
-
-
