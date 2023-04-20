@@ -1,18 +1,13 @@
-$(document).ready(function() {
-	loadSupportContacts();
-	loadResource();
-	loadConnectDetails();
-	loadERGDetails();
-	loadWelcomevideos();
-	loadESGPolicy() ;
-	load_DEI();
-	load_HistoryINFBLOX();
-	loadCoreValues();
-// hide tabs
-	$("#_welcomevideos").hide();
-	$("#_infobloxhistory").hide();
+let region;
 
-});
+   $("#_onboardingInstructions").change(function(){
+		region = $( "#_onboardingInstructions option:selected" ).text();
+		if(region !='Select Region'){
+		loadContent();
+		console.log(region)
+		}
+		
+    });
 
 
 //_welcomevideos
@@ -22,29 +17,28 @@ $("#_tabresourcesLink").on("click", function(){
 	   $("#_helpfulResourceLink").show();
 	   $("#_welcomevideos").hide();
 	   $("#_infobloxhistory").hide();
+	   $("#__onboardingInstructionsLink").hide();
+	   
+
 	   
 	   $("#_tabresourcesLink").addClass('active');
 	   $("#_tabwelcomevideoLink").removeClass('active');
 	   $("#_tababoutInfobloxLink").removeClass('active');
-
-//	   $(this).attr("color","#fff");
-
-	  //background-color: #f5a623;
-  //color: #fff;
-
-	  
+	   $("#_tabInstructionsLink").removeClass('active');
+	   	  
     });
 	
 $("#_tabwelcomevideoLink").on("click", function(){
 	
-	
 	   $("#_tabwelcomevideoLink").addClass('active');
 	   $("#_tabresourcesLink").removeClass('active');
 	   $("#_tababoutInfobloxLink").removeClass('active');
+   	   $("#_tabInstructionsLink").removeClass('active');
        $("#_welcomevideos").show();
 	   $("#_helpfulResourceLink").hide();
 	   $("#_infobloxhistory").hide();
-	   
+	   $("#__onboardingInstructionsLink").hide();
+ 
 	  
 	   
     });
@@ -57,18 +51,79 @@ $("#_tababoutInfobloxLink").on("click", function(){
 	   $("#_helpfulResourceLink").hide();
 	   $("#_welcomevideos").hide();
 	   $("#_infobloxhistory").show();
+       $("#__onboardingInstructionsLink").hide();
 	   
 	   $("#_tabresourcesLink").removeClass('active');
 	   $("#_tabwelcomevideoLink").removeClass('active');
+	   $("#_tabInstructionsLink").removeClass('active');
 	   $("#_tababoutInfobloxLink").addClass('active');
-
-//	   $(this).attr("color","#fff");
-
-	  //background-color: #f5a623;
-  //color: #fff;
-
+  
+    });	
+	
+	
+$("#_tabInstructionsLink").on("click", function(){
+      
+	  // hide other tabs 
+	   $("#_helpfulResourceLink").hide();
+	   $("#_welcomevideos").hide();
+	   $("#_infobloxhistory").hide();
+       $("#__onboardingInstructionsLink").show();	   
+	   $("#_tabresourcesLink").removeClass('active');
+	   $("#_tabwelcomevideoLink").removeClass('active');
+	   $("#_tabInstructionsLink").addClass('active');
+	   $("#_tababoutInfobloxLink").removeClass('active');
 	  
     });	
+
+
+function loadOnboardingDetails(){
+	
+		//_onboardingInstructions
+		/*
+		{
+      "Title": "Workday Onboarding Instructions",
+      "Name":"Workday Onboarding Instructions - INT",
+      "Desc": "Please see attachment for Workday onboarding instructions.",
+	  "Region": "INT",
+      "Icon": "https://infoblox323.github.io/jsonapi/images/PNG/Laptop.png",
+      "URL": "https://drive.google.com/file/d/1yZev_A1B2FslDYImo6VcWnsrhrYde90Z/view"
+    }
+	*/
+		
+		var url = "https://infoblox323.github.io/jsonapi/useronboardingsection.json";
+	$.ajax({
+		url: url,
+		type: "get",
+		dataType: 'text',
+		error: function(data) {
+			//debugger;
+			alert('err'+data);
+		},
+		success: function(data) {
+			const obj = JSON.parse(data);
+			var len = obj.length;
+			if (obj) {
+				var txt = "";
+				if (len > 0) {
+					for (var i = 0; i < len; i++) {
+						
+				if(region==obj[i].Region || obj[i].Region=== 'ALL'){
+						
+						var liAdd = "<li class='list-group-item'><div class='d-flex align-items-center'><div class='flex-shrink-0 me-1'><img src='" + obj[i].Icon + "' class='avatar rounded-circle' /></div><div class='flex-grow-1'><h6 class='mb-0'> " + obj[i].Title + " </h6> <p class='mb-0 text-muted'>" + obj[i].Desc + " </p><a href='" + obj[i].URL + "' target='_blank' >" + obj[i].Name + "</a></div></div></li>";
+				
+						if (liAdd != "") {
+							$("#_onboardingInstructionsItems").append(liAdd);
+								console.log("loadOnboardingDetails  "+region);
+		
+						}
+				}
+					}
+				}
+			}
+		}
+	});
+	
+}
 
 function loadSupportContacts() {
 	var url = "https://infoblox323.github.io/jsonapi/supportContacts.json";
@@ -78,7 +133,7 @@ function loadSupportContacts() {
 		dataType: 'text',
 		error: function(data) {
 			//debugger;
-			alert('err');
+			alert('err'+data);
 		},
 		success: function(data) {
 			const obj = JSON.parse(data);
@@ -87,26 +142,12 @@ function loadSupportContacts() {
 				var txt = "";
 				if (len > 0) {
 					for (var i = 0; i < len; i++) {
-						/*
-						<div class='media tm-notification-item'>
-                                <div class='tm-gray-circle'><img src="img/notification-01.jpg" alt="Avatar Image" class="rounded-circle"></div>
-                                <div class="media-body">
-                                    <p class="mb-2"><b>Jessica</b> and <b>6 others</b> sent you new <a href="#"
-                                            class="tm-notification-link">product updates</a>. Check new orders.</p>
-                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
-                                </div>
-                            </div>
-							var liAdd = "<div class='media tm-notification-item'><div class='tm-gray-circle'><img src='"+ obj[i].Icon + "'alt='Avatar Image' class='rounded-circle'></div><div class='media-body'><div><p class='mb-2'><b>"+ obj[i].Title + "</b> </div>"+" + obj[i].Desc"			
 						
-						<li class='list-group-item'><div class='d-flex align-items-center'><div class='flex-shrink-0 me-3'><img src='" + obj[i].Icon + "' class='avatar rounded-circle' /></div><div class='flex-grow-1'><h6 class='mb-0'> " + obj[i].Title + " </h6> <p class='mb-0 text-muted'>" + obj[i].Desc + " </p></div></div></li>"
-						
-						*/
-						
-						var liAdd = "<li class='list-group-item'><div class='d-flex align-items-center'><div class='flex-shrink-0 me-3'><img src='" + obj[i].Icon + "' class='avatar rounded-circle' /></div><div class='flex-grow-1'><h6 class='mb-0'> " + obj[i].Title + " </h6> <p class='mb-0 text-muted'>" + obj[i].Desc + " </p></div></div></li>";
-				
-						if (liAdd != "") {
-							$("#_supportContacts").append(liAdd);
-						}
+							var liAdd = "<li class='list-group-item'><div class='d-flex align-items-center'><div class='flex-shrink-0 me-3'><img src='" + obj[i].Icon + "' class='avatar rounded-circle' /></div><div class='flex-grow-1'><h6 class='mb-0'> " + obj[i].Title + " </h6> <p class='mb-0 text-muted'>" + obj[i].Desc + " </p></div></div></li>";
+					
+							if (liAdd != "") {
+								$("#_supportContacts").append(liAdd);
+							}
 					}
 				}
 			}
@@ -124,7 +165,7 @@ function loadResource() {
 		dataType: 'text',
 		error: function(data) {
 			//debugger;
-			alert('err');
+			alert('err'+data);
 		},
 		success: function(data) {
 			const obj = JSON.parse(data);
@@ -204,6 +245,54 @@ function loadERGDetails() {
 }
 
 
+function loadWelcomeVdo() {
+		var url = "https://infoblox323.github.io/jsonapi/WelcomeVideos.json";
+		$.ajax({
+		url: url,
+		type: "get",
+		dataType: 'text',
+		error: function(data) {
+			//debugger;
+			alert('err');
+		},
+		success: function(data) {
+			const obj = JSON.parse(data);
+			var len = obj.length;
+			if (obj) {
+				var txt = "";
+				if (len > 0) {
+					for (var i = 0; i < len; i++) {
+						
+			//var liAdd = "<div class='media tm-notification-item'><img src='" + obj[i].Icon + "' alt='Avatar Image' class='rounded-circle flex-shrink-0'></div><div class='media-body'><p class='mb-2'><b>"+obj[i].Name+"</b><div> <h6>"+obj[i].Title+"<h6><a href='#' class='tm-notification-link'>"+obj[i].URL+"</a>.</p></div></div>";
+			
+			var liAdd = "<div class='media tm-notification-item tm-block-overflow'><div class='tm-gray-circle'><img src='" + obj[i].Icon + "' alt='Avatar Image' class='rounded-circle'></div><div class='media-body'><p id='_welcomeVideo"+i +"' class='mb-2'><b>"+obj[i].Name+"</b></br>"+obj[i].Title+"<br></p></div></div>"
+
+				
+						
+						if (liAdd != "") {
+							$("#_welcomeVideoList").append(liAdd);
+						}
+						
+						jQuery('<a>', {
+	    								id: '_welcomeVideoLink'+i,
+									    class: 'mb-0',
+									    text: obj[i].Desc,
+										css: {
+											   color: '#F0EAD6'											   
+											   },
+									    href:'#'
+									   
+						}).appendTo('#_welcomeVideo'+i).click({param1: obj[i]},videoView);
+
+					}
+				}
+			}
+		}
+	});
+
+}
+
+// NOT USED
 function loadWelcomevideos() {
 	var url = "https://infoblox323.github.io/jsonapi/WelcomeVideos.json";
 	$.ajax({
@@ -482,12 +571,12 @@ function load_DEI() {
 									}).appendTo('#_DEItileContent'+i);
 									
 										
-									jQuery('<a>', {
-	    								id: '_DEItitle'+i,
+									jQuery('<a/>', {
+	    								id: '_DEIURL'+i,
 									    class: 'mb-0',
+									    target: '_blank',
+									    href: obj[i].URL,										
 									    text: obj[i].Desc,
-									    target:'_blank',
-									    href:obj[i].URL
 									}).appendTo('#_DEItileContent'+i);
 					
 					}
@@ -575,7 +664,256 @@ function load_HistoryINFBLOX() {
 }
 
 
+function load_Messages() {
+	var url = "https://infoblox323.github.io/jsonapi/Messages.json";
+	
+	
+	/*
+	
+	'<section class="mx-auto my-3" style="max-width: 25rem;">   
+    <div class="card testimonial-card mt-2 mb-3">
+      <div class="card-up aqua-gradient"></div>
+      <div class="avatar mx-auto white">
+        <img src="https://infoblox323.github.io/jsonapi/images/Scott-Headshot.jpg" class="rounded-circle img-fluid"
+          alt="woman avatar">
+      </div>
+      <div class="card-body text-center">
+        <h5 class="card-title font-weight-bold">Scott Harrell</h5>
+        <hr>
+        <p><i class="fas fa-quote-left"></i> You're joining Infoblox at a time of incredible growth and opportunity, as we continue to disrupt -- and simplify -- networking and security.</p>
+		  <a href="#"> A Message From Scott Harrell </a>
+      </div>
+    </div> 
+  </section>
+  
+  
+	*/
+	$.ajax({
+		url: url,
+		type: "get",
+		dataType: 'text',
+		error: function(data) {
+			//debugger;
+			alert('err');
+		},
+		success: function(data) {
+			const obj = JSON.parse(data);
+			var len = obj.length;
+			if (obj) {
+				var txt = "";
+				if (len > 0) {
+
+					for (var i = 0; i < len; i++) {
+						
+						
+						/*
+						
+						<section class='mx-auto my-3' style='max-width: 25rem;'>   
+    <div class='card testimonial-card mt-2 mb-3'>
+      <div class='card-up aqua-gradient'></div>
+      <div class='avatar mx-auto white'>
+        <img src="https://infoblox323.github.io/jsonapi/images/Scott-Headshot.jpg" class="rounded-circle img-fluid"
+          alt="woman avatar">
+      </div>
+      <div class="card-body text-center">
+        <h5 class="card-title font-weight-bold">Scott Harrell</h5>
+        <hr>
+        <p><i class="fas fa-quote-left"></i> You're joining Infoblox at a time of incredible growth and opportunity, as we continue to disrupt -- and simplify -- networking and security.</p>
+		  <a href="#"> A Message From Scott Harrell </a>
+      </div>
+    </div> 
+  </section>
+						
+						
+						var liAdd = "<li class='list-group-item'><div class='d-flex align-items-center'><div class='flex-shrink-0 me-3'><img src='" + obj[i].Icon + "' class='avatar rounded-circle' /></div><div class='flex-grow-1'><h6 class='mb-0'> " + obj[i].Title + " </h6> <p class='mb-0 text-muted'>" + obj[i].Desc + " </p></a></div></div></li>"
+						
+						{param1: "Hello", param2: "World"}, cool_function
+						
+						if (liAdd != "") {
+							$("#_coreValues").append(liAdd);
+						}
+						*/
+						
+						var _msgContent = " <section class='mx-auto my-3' style='max-width: 25rem;'>   <div class='card testimonial-card mt-2 mb-3'><div class='card-up aqua-gradient'></div><div class='avatar mx-auto white'><img src='"+obj[i].Icon +"' class='rounded-circle img-fluid' alt='woman avatar'> </div> <div class='card-body text-center' id='_body"+i+"'><h6 class='card-title font-weight-bold'>"+ obj[i].Name +"</h6> <hr><i class='fas fa-quote-left'></i> "+obj[i].short_Desc+"</br></div></div></section>";
+						
+						if (_msgContent != "") {
+							$("#_msgbox").append(_msgContent);
+						}
+						
+					jQuery('<a>', {
+	    								id: 'msgView'+i,
+									    class: 'mb-0',
+									    text: obj[i].Desc,
+										'data-toggle':"modal",
+										'data-target': obj[i].Name,
+									    href:'#'
+									   
+						}).appendTo('#_body'+i).click({param1: obj[i]},msgView);
+
+// modal-dialog modal-dialog-centered modal-dialog-scrollable  modal-dialog
+						//var _popupcontent = " <div class='modal' tabindex='-1' id="+obj[i].Title+"><div class='modal-dialog'><div class='modal-content'><div class='modal-header'><button type='button' class='close' data-bs-dismiss='modal' aria-label='Close'></button></div><div class='modal-body'><section class='mx-auto my-3' style='max-width: 25rem;'><div class='card testimonial-card mt-2 mb-3'><div class='card-up aqua-gradient'></div> <div class='avatar mx-auto white'><img src='"+obj[i].Icon +"' class='rounded-circle img-fluid' alt='woman avatar'></div><div class='card-body text-center'><h5 class='card-title font-weight-bold'>"+obj[i].Name+"</h5><hr>"+ obj[i].msg+"</div></div> </section></div></div></div></div>";
+						
+					var _popupcontent = "<div class='modal fade' id='"+obj[i].Title+"' tabindex='-1' aria-labelledby='"+obj[i].Title+"' aria-hidden='true'><div class='modal-dialog modal-dialog-centered '><div class='modal-content'><div class='modal-body'><section class='mx-auto my-3' style='max-width: 25rem;'><div class='card testimonial-card mt-2 mb-3'><div class='card-up aqua-gradient'></div> <div class='avatar mx-auto white'><img src='"+obj[i].Icon +"' class='rounded-circle img-fluid' alt='woman avatar'></div><div class='card-body text-center'><h5 class='card-title font-weight-bold'>"+obj[i].Name+"</h5><hr>"+ obj[i].msg+"</div></div> </section></div></div></div></div>";
+
+						if (_popupcontent != "") {
+							$("#_msgboxpopup").append(_popupcontent);
+						}
+						
 
 
+
+/*
+
+<div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+						<section class='mx-auto my-3' style='max-width: 25rem;'>   
+    <div class='card testimonial-card mt-2 mb-3'>
+      <div class='card-up aqua-gradient'></div>
+      <div class='avatar mx-auto white'>
+        <img src="https://infoblox323.github.io/jsonapi/images/Scott-Headshot.jpg" class="rounded-circle img-fluid"
+          alt="woman avatar">
+      </div>
+      <div class="card-body text-center">
+        <h5 class="card-title font-weight-bold">Scott Harrell</h5>
+        <hr>
+        <p><i class="fas fa-quote-left"></i> You're joining Infoblox at a time of incredible growth and opportunity, as we continue to disrupt -- and simplify -- networking and security.</p>
+		  <a href="#"> A Message From Scott Harrell </a>
+      </div>
+    </div> 
+  </section>
+
+
+<div class="modal" tabindex="-1">
+<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+	  
+	  
+	  <section class='mx-auto my-3' style='max-width: 25rem;'>   
+    <div class='card testimonial-card mt-2 mb-3'>
+      <div class='card-up aqua-gradient'></div>
+      <div class='avatar mx-auto white'>
+        <img src="https://infoblox323.github.io/jsonapi/images/Scott-Headshot.jpg" class="rounded-circle img-fluid"
+          alt="woman avatar">
+      </div>
+      <div class="card-body text-center">
+        <h5 class="card-title font-weight-bold">Scott Harrell</h5>
+        <hr>
+        <p><i class="fas fa-quote-left"></i> You're joining Infoblox at a time of incredible growth and opportunity, as we continue to disrupt -- and simplify -- networking and security.</p>
+		  <a href="#"> A Message From Scott Harrell </a>
+      </div>
+    </div> 
+  </section>
+	  
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+*/
+
+					}
+				}
+			}
+		}
+	});
+
+}
+
+function videoView(event){
+//_welcomeVideoLink'+i,
+/*
+    {
+      "Title": "People & Places SVP",
+      "Name":"Carolyn Gracey",
+      "Desc": "Click here to watch a welcome video from Carolyn.",
+      "Icon": "https://infoblox323.github.io/jsonapi/images/Cgrace (1).jpg",
+      "URL": "https://drive.google.com/file/d/1yZev_A1B2FslDYImo6VcWnsrhrYde90Z/view"
+    },  
+
+ 
+	*/
+  $.fn.SimpleModal({
+            hideFooter: true,
+            width: 710,
+            title: '<b>'+event.data.param1.Name+"</b><br>"+event.data.param1.Title,
+            model: 'modal',
+            contents: '<iframe src="'+ event.data.param1.URL+'" width="680" height="382" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>'
+        }).showModal();	
+		
+		
+     
+
+}
+
+function msgView(event){
+	//alert(JSON.stringify(event.data.param1.Name));
+	$('#'+event.data.param1.Title).modal('show');
+//$('#myModal').modal('show');
+//$('#myModal').modal('hide');
+	
+
+	
+}
+
+
+function loadContent(){
+	loadSupportContacts();
+	loadResource();
+	loadConnectDetails();
+	loadERGDetails();
+	loadOnboardingDetails();
+	
+	loadWelcomeVdo();
+	
+	//loadWelcomevideos();
+	loadESGPolicy() ;
+	load_DEI();
+	load_HistoryINFBLOX();
+	loadCoreValues();
+	load_Messages();
+	
+// hide tabs
+
+	$("#_welcomevideos").hide();
+	$("#_infobloxhistory").hide();
+	$("#_contentHome").hide();;
+	$("li").removeClass('hide-display');
+	$("#_regionSelect").hide();
+    $("#_helpfulResourceLink").hide();
+	$("#_welcomevideos").hide();
+	$("#_infobloxhistory").hide();
+	
+	
+	$("#_contentHome").show();
+	$("#_msgSection").show();
+	$("#__onboardingInstructionsLink").show()
+
+
+	
+}
 
 
