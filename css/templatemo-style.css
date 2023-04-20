@@ -64,7 +64,7 @@ button:focus {
   color: #fff;
 }
 .navbar {
-  height: 100px;
+  height: 50px;
   background-color: #567086;
   padding: 0;
 }
@@ -516,7 +516,7 @@ input[type="checkbox"]:focus {
   -o-border-radius: 0;
   border-radius: 0;
   padding: 15px;
-  background: url(../img/arrow-down.png) 98% no-repeat #50657b;
+  background: url(https://infoblox323.github.io/jsonapi/images/arrow-down.png) 98% no-repeat #50657b;
 }
 .custom-select:focus {
   outline: 0;
@@ -913,6 +913,3 @@ input[type="checkbox"]:focus {
 .simple-modal.hide-footer .simple-modal-footer {
   display: none;
 }
-
-
-
