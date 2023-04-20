@@ -2,6 +2,7 @@ let region;
 
    $("#_onboardingInstructions").change(function(){
 		region = $( "#_onboardingInstructions option:selected" ).text();
+	   alert(region);
 		if(region !='Select Region'){
 		loadContent();
 		console.log(region)
