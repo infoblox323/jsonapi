@@ -4,7 +4,7 @@
       "Name":"Global Benefits Portal",
       "Desc": "Click below to view our Global Benefits Portal",
       "Icon": "https://infoblox323.github.io/jsonapi/Resources/Benefits%20Icon.png",
-      "URL": "https://hrportal.ehr.com/infoblox"
+      "URL": "https://www.infobloxbenefits.com/"
     },   
     {
       "Title": "Payroll",
@@ -18,19 +18,19 @@
       "Name":"Slack Channel Directory",
       "Desc": "Click below to view our Slack channel directory",
       "Icon": "https://infoblox323.github.io/jsonapi/Resources/Slack Icon.jpeg",
-      "URL": "https://docs.google.com/document/d/1soGwvos9FaVDNK7bZpdSOjHiTvAeJUpu/edit?usp=sharing&ouid=112638807906869565745&rtpof=true&sd=true"
+      "URL": "https://sites.google.com/infoblox.com/blox360/departments/information-technology/slack"
     },   
     {
       "Title": "Blox360",
       "Name":"Blox360",
-      "Desc": "Click below to navigate to our New Bloxers Hub",
+      "Desc": "Click below to view our Employee Referral Guidelines after your first day",
       "Icon": "https://infoblox323.github.io/jsonapi/Resources/Blox360 Logo Icon.png",
       "URL": "https://sites.google.com/infoblox.com/blox360/home"
     },  
     {
       "Title":"Employee Referral Program",
       "Name":"Blox 360 Employee Referral Guidelines",
-      "Desc": "Click below to view our Employee Referral Guidelines",
+      "Desc": "Click below to view our Employee Referral Guidelines after your first day",
       "Icon": "https://infoblox323.github.io/jsonapi/Resources/Employee Referral Icon.png",
       "URL": "https://sites.google.com/infoblox.com/blox360/departments/people-places/employee-referral-program?authuser=0"
     },
