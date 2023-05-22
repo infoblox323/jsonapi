@@ -1,7 +1,7 @@
 [
      
     {
-      "Title": "CEO",
+      "Title": " ,CEO",
       "Name":"Scott Harrell",
       "Desc": "A Message From Scott Harrell",
 	  "short_Desc": "You're joining Infoblox at a time of incredible growth and opportunity, as we continue to disrupt -- and simplify -- networking and security.",
@@ -17,7 +17,7 @@
       "Icon": "https://infoblox323.github.io/jsonapi/images/PNG/People-Customers.png"
     },	
     {
-      "Title": "CHRO",
+      "Title": " ,CHRO",
       "Name": "Carolyn Gracey",
       "Desc": "A Message From People & Places",
 	  "short_Desc" : "Infoblox is a special place, so make the most of it, and continue to learn along the way.",
