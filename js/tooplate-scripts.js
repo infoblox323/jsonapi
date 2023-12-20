@@ -871,7 +871,8 @@ function videoView(event){
 
 function msgView(event){
 	//alert(JSON.stringify(event.data.param1.Name));
-	$('#'+event.data.param1.Title).modal('show');
+	//$('#'+event.data.param1.Title).modal('show');
+	$('#'+event.data.param1.id).modal('show');
 //$('#myModal').modal('show');
 //$('#myModal').modal('hide');
 	
